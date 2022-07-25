@@ -12,14 +12,13 @@ body
 
 
 
-
-
 /*Header  section starts*/
 
 .start{
     width:100%;
     height: 700px;
     background: url("Media/netflix.jpg");
+    box-shadow: 0 0 140px 120px black inset;
     background-position: center;
 }
 .start-top
@@ -33,7 +32,7 @@ padding-top: 29px;
     }
 .signin
 {
-    background-color: #e20c17;
+    background-color: #d00711;
     color:white;
     border-radius: 4px;
     float:right;
@@ -43,11 +42,15 @@ padding-top: 29px;
     height:32px;
     width: 85px;
 }
+.signin:hover
+{
+    cursor: pointer;
+}
 .start-top select
 {
     float:right;
-    position: relative;
-    right: 241px;
+    position: absolute;
+    right: 180px;
     height:32px;
     width: 85px;
     background-color: transparent ;
@@ -57,7 +60,7 @@ padding-top: 29px;
 .start-top select option
 {
     color:black;
-    float:right;
+    background:gray ;
 }
 .startbottom
 {
@@ -71,15 +74,16 @@ padding-top: 29px;
 {
     color: white;
     font-size: 60px;
+
 }
 .startbottom h2
-{
+{   margin-top: 10px;
     color: white;
     font-size: 60 px;
     font-weight:bold;
 }
 .startbottom h3
-{
+{   
     color: white;
     font-size: 60 px;
     font-weight:bold;
@@ -91,6 +95,10 @@ padding-top: 29px;
     border:none;
     padding-left:  20px;
     font-size: 20px;
+}
+.startbottom input:focus
+{
+    outline:none;
 }
 .startbottom button
 {
@@ -104,6 +112,10 @@ padding-top: 29px;
     font-weight: bold;
     font-size: 20px;
 }
+.startbottom button
+{
+    cursor: pointer;
+}
 /*Header  section ends*/
 
 
@@ -116,7 +128,7 @@ padding-top: 29px;
 /*main section*/
 
 .main-section .section1{
-    border-top: 8px solid #222;
+    border-top: 8px solid gray;
     background-color: black;
     display: flex;
     padding: 0px 80px;
@@ -132,12 +144,11 @@ padding-top: 29px;
 }
 .main-section .section1 .left h3{
     color: white;
-    font-size: 1.4rem;
+    font-size: 22px;
     font-weight: normal;
     margin-top: 5%;
 }
 .main-section .section1 .right{
-    overflow: hidden;
     position: relative;
     width: 80%;
     height: 500px;
@@ -157,7 +168,7 @@ secondimage{
 /*SECOND SECTION*/
 .section2{
     background-color: black;
-    border-top: 8px solid #222;
+    border-top: 8px solid gray;
     padding-top: 60px;
 }
 .section2 h1{
@@ -167,7 +178,7 @@ secondimage{
 }
 .section2 button{
     border: none;
-    background-color: #303030;
+    background-color: rgb(59, 50, 50);
     color: white;
     width: 60%;
     padding: 16px;
@@ -184,22 +195,20 @@ text-decoration: none;
 .section2 a:link
 {
     
-        color:#FFFFFF;
+        color:white;
 }
     
 .section2 a:visited
 {
-        color:#FFFFFF;
+        color:white;
 }
     
 .section2 a:hover 
 {
-        color:#FFFFFF;
+        color:white;
 }
 .section2 button  img{
     width: 3%;
-    display: flex;
-    align-items: center;
     margin: 0 auto;
     position: absolute;
     right: 20px;
@@ -217,17 +226,17 @@ text-decoration: none;
 footer{
     background-color: black;
     border-top: 8px solid #222;
-    padding-top: 140px;
-    color: white;
+    padding-top: 70px;
+    color: grey;
     
 }
 footer h4
 {
-padding-left: 120px;
+padding-left: 330px;
 }
   footer .content{
     
-    margin: 0px 90px;
+    margin: 0px 300px;
     padding: 30px;
     display: flex;
 
@@ -235,7 +244,7 @@ padding-left: 120px;
  
   footer .content a{
     text-decoration: none;
-    color: white;
+    color: grey;
     line-height: 32px;
   }
 
@@ -259,24 +268,31 @@ padding-left: 120px;
 {
     float:right;
     position: absolute;
-    left:9%;
+    left: 330px;
     right: 241px;
     height:32px;
     width: 85px;
     background-color: transparent ;
-    color:white
+    color:gray;
 
 }
 .content select option
 {
     color:black;
     float:right;
+    background: gray;
 }
 footer p
 {
     position: absolute;
-    left:9%; 
+    margin-top: 10px;
+    left:330px; 
 }
+footer ul
+{
+    list-style-type: none;
+}
+
 /* FOOTER SECTION ENDS */
 
 
